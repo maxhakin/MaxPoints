@@ -13,6 +13,13 @@
 		ADC075FB2C51751400D8E62F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC075FA2C51751400D8E62F /* Preview Assets.xcassets */; };
 		ADC075FD2C51751400D8E62F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC075FC2C51751400D8E62F /* Persistence.swift */; };
 		ADC076002C51751400D8E62F /* MaxPoints.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADC075FE2C51751400D8E62F /* MaxPoints.xcdatamodeld */; };
+		ADC076072C5186B100D8E62F /* TaskTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC076062C5186B100D8E62F /* TaskTrackerView.swift */; };
+		ADC076092C5188AF00D8E62F /* DataHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC076082C5188AF00D8E62F /* DataHandling.swift */; };
+		ADC0760B2C51967E00D8E62F /* TaskTrackerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC0760A2C51967E00D8E62F /* TaskTrackerStoryboard.storyboard */; };
+		ADC0760D2C564D3D00D8E62F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0760C2C564D3D00D8E62F /* Activity.swift */; };
+		ADC0760F2C56506B00D8E62F /* AddActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0760E2C56506B00D8E62F /* AddActivityView.swift */; };
+		ADC076122C5650C300D8E62F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC076112C5650C300D8E62F /* ImagePicker.swift */; };
+		ADC076142C56558800D8E62F /* SFSymbolPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC076132C56558800D8E62F /* SFSymbolPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +30,13 @@
 		ADC075FA2C51751400D8E62F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADC075FC2C51751400D8E62F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		ADC075FF2C51751400D8E62F /* MaxPoints.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MaxPoints.xcdatamodel; sourceTree = "<group>"; };
+		ADC076062C5186B100D8E62F /* TaskTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTrackerView.swift; sourceTree = "<group>"; };
+		ADC076082C5188AF00D8E62F /* DataHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandling.swift; sourceTree = "<group>"; };
+		ADC0760A2C51967E00D8E62F /* TaskTrackerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskTrackerStoryboard.storyboard; sourceTree = "<group>"; };
+		ADC0760C2C564D3D00D8E62F /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		ADC0760E2C56506B00D8E62F /* AddActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityView.swift; sourceTree = "<group>"; };
+		ADC076112C5650C300D8E62F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		ADC076132C56558800D8E62F /* SFSymbolPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +69,16 @@
 		ADC075F22C51751300D8E62F /* MaxPoints */ = {
 			isa = PBXGroup;
 			children = (
+				ADC076102C56507A00D8E62F /* Views */,
 				ADC075F32C51751300D8E62F /* MaxPointsApp.swift */,
-				ADC075F52C51751300D8E62F /* ContentView.swift */,
+				ADC076082C5188AF00D8E62F /* DataHandling.swift */,
+				ADC0760C2C564D3D00D8E62F /* Activity.swift */,
+				ADC0760A2C51967E00D8E62F /* TaskTrackerStoryboard.storyboard */,
 				ADC075F72C51751400D8E62F /* Assets.xcassets */,
 				ADC075FC2C51751400D8E62F /* Persistence.swift */,
 				ADC075FE2C51751400D8E62F /* MaxPoints.xcdatamodeld */,
 				ADC075F92C51751400D8E62F /* Preview Content */,
+				ADC076112C5650C300D8E62F /* ImagePicker.swift */,
 			);
 			path = MaxPoints;
 			sourceTree = "<group>";
@@ -71,6 +89,17 @@
 				ADC075FA2C51751400D8E62F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ADC076102C56507A00D8E62F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADC0760E2C56506B00D8E62F /* AddActivityView.swift */,
+				ADC076062C5186B100D8E62F /* TaskTrackerView.swift */,
+				ADC075F52C51751300D8E62F /* ContentView.swift */,
+				ADC076132C56558800D8E62F /* SFSymbolPicker.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +162,7 @@
 			files = (
 				ADC075FB2C51751400D8E62F /* Preview Assets.xcassets in Resources */,
 				ADC075F82C51751400D8E62F /* Assets.xcassets in Resources */,
+				ADC0760B2C51967E00D8E62F /* TaskTrackerStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADC076092C5188AF00D8E62F /* DataHandling.swift in Sources */,
+				ADC0760F2C56506B00D8E62F /* AddActivityView.swift in Sources */,
+				ADC076142C56558800D8E62F /* SFSymbolPicker.swift in Sources */,
 				ADC075FD2C51751400D8E62F /* Persistence.swift in Sources */,
+				ADC076122C5650C300D8E62F /* ImagePicker.swift in Sources */,
+				ADC0760D2C564D3D00D8E62F /* Activity.swift in Sources */,
+				ADC076072C5186B100D8E62F /* TaskTrackerView.swift in Sources */,
 				ADC076002C51751400D8E62F /* MaxPoints.xcdatamodeld in Sources */,
 				ADC075F62C51751300D8E62F /* ContentView.swift in Sources */,
 				ADC075F42C51751300D8E62F /* MaxPointsApp.swift in Sources */,
@@ -293,7 +329,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.XRT.MaxPoints;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hakin.MaxPoints;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -322,7 +358,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.XRT.MaxPoints;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hakin.MaxPoints;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
