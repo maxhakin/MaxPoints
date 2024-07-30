@@ -14,7 +14,6 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                // Bind the activities array to provide bindings for each activity
                 ForEach($activities) { $activity in
                     VStack(alignment: .leading) {
                         HStack {
@@ -36,8 +35,11 @@ struct ContentView: View {
                             }
                             .buttonStyle(PlainButtonStyle())
                         }
-                        
-                        // Display the count of today's increments
+
+                        // Simple line graph showing increments over the last 7 days
+                        SimpleLineGraphView(dataPoints: activity.incrementDates)
+                            .padding(.top, 5)
+
                         let todayIncrementCount = activity.incrementDates.filter { isSameDay(date1: $0, date2: Date()) }.count
                         Text("Today's Increments: \(todayIncrementCount)")
                             .font(.subheadline)
@@ -65,8 +67,4 @@ struct ContentView: View {
         let calendar = Calendar.current
         return calendar.isDate(date1, inSameDayAs: date2)
     }
-}
-
-#Preview {
-    ContentView()
 }

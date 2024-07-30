@@ -20,6 +20,7 @@
 		ADC0760F2C56506B00D8E62F /* AddActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0760E2C56506B00D8E62F /* AddActivityView.swift */; };
 		ADC076122C5650C300D8E62F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC076112C5650C300D8E62F /* ImagePicker.swift */; };
 		ADC076142C56558800D8E62F /* SFSymbolPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC076132C56558800D8E62F /* SFSymbolPicker.swift */; };
+		ADC076162C57D11300D8E62F /* SimpleLineGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC076152C57D11300D8E62F /* SimpleLineGraphView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		ADC0760E2C56506B00D8E62F /* AddActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityView.swift; sourceTree = "<group>"; };
 		ADC076112C5650C300D8E62F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		ADC076132C56558800D8E62F /* SFSymbolPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolPicker.swift; sourceTree = "<group>"; };
+		ADC076152C57D11300D8E62F /* SimpleLineGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLineGraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				ADC076062C5186B100D8E62F /* TaskTrackerView.swift */,
 				ADC075F52C51751300D8E62F /* ContentView.swift */,
 				ADC076132C56558800D8E62F /* SFSymbolPicker.swift */,
+				ADC076152C57D11300D8E62F /* SimpleLineGraphView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				ADC076122C5650C300D8E62F /* ImagePicker.swift in Sources */,
 				ADC0760D2C564D3D00D8E62F /* Activity.swift in Sources */,
 				ADC076072C5186B100D8E62F /* TaskTrackerView.swift in Sources */,
+				ADC076162C57D11300D8E62F /* SimpleLineGraphView.swift in Sources */,
 				ADC076002C51751400D8E62F /* MaxPoints.xcdatamodeld in Sources */,
 				ADC075F62C51751300D8E62F /* ContentView.swift in Sources */,
 				ADC075F42C51751300D8E62F /* MaxPointsApp.swift in Sources */,

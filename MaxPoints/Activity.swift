@@ -14,3 +14,9 @@ struct Activity: Identifiable {
     var symbolName: String
     var incrementDates: [Date] = []
 }
+
+struct DailyIncrement: Identifiable {
+    let id = UUID()
+    let date: Date
+    let count: Int
+}
