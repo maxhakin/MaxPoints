@@ -4,22 +4,22 @@
 //
 //  Created by Max Hakin on 24/07/2024.
 //
-
 import SwiftUI
 
 struct ContentView: View {
-    @State private var activities: [Activity] = []
+    @EnvironmentObject var activityStore: ActivityStore
     @State private var isAddActivityPresented: Bool = false
 
     var body: some View {
         NavigationView {
             List {
-                ForEach($activities) { $activity in
+                ForEach($activityStore.activities) { $activity in
                     VStack(alignment: .leading) {
                         HStack {
                             Image(systemName: activity.symbolName)
                                 .resizable()
                                 .frame(width: 50, height: 50)
+                                .clipShape(Circle())
 
                             Text(activity.name)
                                 .font(.headline)
@@ -28,6 +28,9 @@ struct ContentView: View {
 
                             Button(action: {
                                 activity.incrementDates.append(Date())
+                                Task {
+                                    try? await activityStore.save(activities: activityStore.activities)
+                                }
                             }) {
                                 Image(systemName: "plus.circle")
                                     .resizable()
@@ -47,6 +50,7 @@ struct ContentView: View {
                     }
                     .padding(.vertical, 10)
                 }
+                .onDelete(perform: deleteActivity)
             }
             .navigationBarTitle("Activities")
             .navigationBarItems(trailing: Button(action: {
@@ -56,8 +60,16 @@ struct ContentView: View {
             })
             .sheet(isPresented: $isAddActivityPresented) {
                 AddActivityView { newActivity in
-                    activities.append(newActivity)
+                    activityStore.activities.append(newActivity)
+                    Task {
+                        try? await activityStore.save(activities: activityStore.activities)
+                    }
                 }
+            }
+        }
+        .onAppear {
+            Task {
+                try? await activityStore.load()
             }
         }
     }
@@ -66,5 +78,13 @@ struct ContentView: View {
     func isSameDay(date1: Date, date2: Date) -> Bool {
         let calendar = Calendar.current
         return calendar.isDate(date1, inSameDayAs: date2)
+    }
+
+    // Function to delete an activity
+    private func deleteActivity(at offsets: IndexSet) {
+        activityStore.activities.remove(atOffsets: offsets)
+        Task {
+            try? await activityStore.save(activities: activityStore.activities)
+        }
     }
 }
