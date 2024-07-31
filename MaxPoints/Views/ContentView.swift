@@ -19,7 +19,6 @@ struct ContentView: View {
                             Image(systemName: activity.symbolName)
                                 .resizable()
                                 .frame(width: 50, height: 50)
-                                .clipShape(Circle())
 
                             Text(activity.name)
                                 .font(.headline)

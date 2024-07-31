@@ -18,7 +18,6 @@
 		ADC0760B2C51967E00D8E62F /* TaskTrackerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC0760A2C51967E00D8E62F /* TaskTrackerStoryboard.storyboard */; };
 		ADC0760D2C564D3D00D8E62F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0760C2C564D3D00D8E62F /* Activity.swift */; };
 		ADC0760F2C56506B00D8E62F /* AddActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0760E2C56506B00D8E62F /* AddActivityView.swift */; };
-		ADC076122C5650C300D8E62F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC076112C5650C300D8E62F /* ImagePicker.swift */; };
 		ADC076142C56558800D8E62F /* SFSymbolPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC076132C56558800D8E62F /* SFSymbolPicker.swift */; };
 		ADC076162C57D11300D8E62F /* SimpleLineGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC076152C57D11300D8E62F /* SimpleLineGraphView.swift */; };
 		ADC076192C59889C00D8E62F /* ActivityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC076182C59889C00D8E62F /* ActivityStore.swift */; };
@@ -37,7 +36,6 @@
 		ADC0760A2C51967E00D8E62F /* TaskTrackerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskTrackerStoryboard.storyboard; sourceTree = "<group>"; };
 		ADC0760C2C564D3D00D8E62F /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		ADC0760E2C56506B00D8E62F /* AddActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityView.swift; sourceTree = "<group>"; };
-		ADC076112C5650C300D8E62F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		ADC076132C56558800D8E62F /* SFSymbolPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolPicker.swift; sourceTree = "<group>"; };
 		ADC076152C57D11300D8E62F /* SimpleLineGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLineGraphView.swift; sourceTree = "<group>"; };
 		ADC076182C59889C00D8E62F /* ActivityStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityStore.swift; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 				ADC075FC2C51751400D8E62F /* Persistence.swift */,
 				ADC075FE2C51751400D8E62F /* MaxPoints.xcdatamodeld */,
 				ADC075F92C51751400D8E62F /* Preview Content */,
-				ADC076112C5650C300D8E62F /* ImagePicker.swift */,
 			);
 			path = MaxPoints;
 			sourceTree = "<group>";
@@ -183,7 +180,6 @@
 				ADC0760F2C56506B00D8E62F /* AddActivityView.swift in Sources */,
 				ADC076142C56558800D8E62F /* SFSymbolPicker.swift in Sources */,
 				ADC075FD2C51751400D8E62F /* Persistence.swift in Sources */,
-				ADC076122C5650C300D8E62F /* ImagePicker.swift in Sources */,
 				ADC0760D2C564D3D00D8E62F /* Activity.swift in Sources */,
 				ADC076072C5186B100D8E62F /* TaskTrackerView.swift in Sources */,
 				ADC076162C57D11300D8E62F /* SimpleLineGraphView.swift in Sources */,
