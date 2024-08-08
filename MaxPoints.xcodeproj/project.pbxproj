@@ -21,6 +21,7 @@
 		ADC076142C56558800D8E62F /* SFSymbolPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC076132C56558800D8E62F /* SFSymbolPicker.swift */; };
 		ADC076162C57D11300D8E62F /* SimpleLineGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC076152C57D11300D8E62F /* SimpleLineGraphView.swift */; };
 		ADC076192C59889C00D8E62F /* ActivityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC076182C59889C00D8E62F /* ActivityStore.swift */; };
+		ADC0761D2C63B88300D8E62F /* RepeatingBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0761C2C63B88300D8E62F /* RepeatingBackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		ADC076132C56558800D8E62F /* SFSymbolPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolPicker.swift; sourceTree = "<group>"; };
 		ADC076152C57D11300D8E62F /* SimpleLineGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLineGraphView.swift; sourceTree = "<group>"; };
 		ADC076182C59889C00D8E62F /* ActivityStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityStore.swift; sourceTree = "<group>"; };
+		ADC0761C2C63B88300D8E62F /* RepeatingBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingBackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				ADC075F52C51751300D8E62F /* ContentView.swift */,
 				ADC076132C56558800D8E62F /* SFSymbolPicker.swift */,
 				ADC076152C57D11300D8E62F /* SimpleLineGraphView.swift */,
+				ADC0761C2C63B88300D8E62F /* RepeatingBackgroundView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				ADC076192C59889C00D8E62F /* ActivityStore.swift in Sources */,
 				ADC076002C51751400D8E62F /* MaxPoints.xcdatamodeld in Sources */,
 				ADC075F62C51751300D8E62F /* ContentView.swift in Sources */,
+				ADC0761D2C63B88300D8E62F /* RepeatingBackgroundView.swift in Sources */,
 				ADC075F42C51751300D8E62F /* MaxPointsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

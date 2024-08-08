@@ -11,31 +11,39 @@ struct ContentView: View {
     @State private var isAddActivityPresented: Bool = false
 
     var body: some View {
+        
         NavigationView {
             List {
                 ForEach($activityStore.activities) { $activity in
                     VStack(alignment: .leading) {
-                        HStack {
-                            Image(systemName: activity.symbolName)
-                                .resizable()
-                                .frame(width: 50, height: 50)
-
-                            Text(activity.name)
-                                .font(.headline)
-
-                            Spacer()
-
-                            Button(action: {
-                                activity.incrementDates.append(Date())
-                                Task {
-                                    try? await activityStore.save(activities: activityStore.activities)
+                        ZStack {
+                            // Repeating pattern background
+                            RepeatingPatternView(symbolName: activity.symbolName, size: 30, spacing: 15)
+                                .foregroundColor(.gray.opacity(0.2)) // Adjust the color and opacity as needed
+                            HStack {
+                                //Try moving this before the VStack? do i need to set to fill the containing view? For the tile to repeat?
+                                Image(systemName: activity.symbolName)
+                                    .resizable(resizingMode: .tile)
+                                    .frame(width: 50, height: 50)
+                                
+                                
+                                Text(activity.name)
+                                    .font(.headline)
+                                
+                                Spacer()
+                                
+                                Button(action: {
+                                    activity.incrementDates.append(Date())
+                                    Task {
+                                        try? await activityStore.save(activities: activityStore.activities)
+                                    }
+                                }) {
+                                    Image(systemName: "plus.circle")
+                                        .resizable()
+                                        .frame(width: 30, height: 30)
                                 }
-                            }) {
-                                Image(systemName: "plus.circle")
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
+                                .buttonStyle(PlainButtonStyle())
                             }
-                            .buttonStyle(PlainButtonStyle())
                         }
 
                         // Simple line graph showing increments over the last 7 days
