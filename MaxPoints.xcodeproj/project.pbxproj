@@ -15,7 +15,6 @@
 		ADC076002C51751400D8E62F /* MaxPoints.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADC075FE2C51751400D8E62F /* MaxPoints.xcdatamodeld */; };
 		ADC076072C5186B100D8E62F /* TaskTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC076062C5186B100D8E62F /* TaskTrackerView.swift */; };
 		ADC076092C5188AF00D8E62F /* DataHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC076082C5188AF00D8E62F /* DataHandling.swift */; };
-		ADC0760B2C51967E00D8E62F /* TaskTrackerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC0760A2C51967E00D8E62F /* TaskTrackerStoryboard.storyboard */; };
 		ADC0760D2C564D3D00D8E62F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0760C2C564D3D00D8E62F /* Activity.swift */; };
 		ADC0760F2C56506B00D8E62F /* AddActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0760E2C56506B00D8E62F /* AddActivityView.swift */; };
 		ADC076142C56558800D8E62F /* SFSymbolPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC076132C56558800D8E62F /* SFSymbolPicker.swift */; };
@@ -34,7 +33,6 @@
 		ADC075FF2C51751400D8E62F /* MaxPoints.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MaxPoints.xcdatamodel; sourceTree = "<group>"; };
 		ADC076062C5186B100D8E62F /* TaskTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTrackerView.swift; sourceTree = "<group>"; };
 		ADC076082C5188AF00D8E62F /* DataHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandling.swift; sourceTree = "<group>"; };
-		ADC0760A2C51967E00D8E62F /* TaskTrackerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskTrackerStoryboard.storyboard; sourceTree = "<group>"; };
 		ADC0760C2C564D3D00D8E62F /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		ADC0760E2C56506B00D8E62F /* AddActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityView.swift; sourceTree = "<group>"; };
 		ADC076132C56558800D8E62F /* SFSymbolPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolPicker.swift; sourceTree = "<group>"; };
@@ -78,7 +76,6 @@
 				ADC076182C59889C00D8E62F /* ActivityStore.swift */,
 				ADC076082C5188AF00D8E62F /* DataHandling.swift */,
 				ADC0760C2C564D3D00D8E62F /* Activity.swift */,
-				ADC0760A2C51967E00D8E62F /* TaskTrackerStoryboard.storyboard */,
 				ADC075F72C51751400D8E62F /* Assets.xcassets */,
 				ADC075FC2C51751400D8E62F /* Persistence.swift */,
 				ADC075FE2C51751400D8E62F /* MaxPoints.xcdatamodeld */,
@@ -168,7 +165,6 @@
 			files = (
 				ADC075FB2C51751400D8E62F /* Preview Assets.xcassets in Resources */,
 				ADC075F82C51751400D8E62F /* Assets.xcassets in Resources */,
-				ADC0760B2C51967E00D8E62F /* TaskTrackerStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
