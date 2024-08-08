@@ -58,9 +58,13 @@ struct ContentView: View {
                     )
                     .cornerRadius(10)  // Optional: Rounds the corners of each activity card
                     .padding(.vertical, 5)  // Padding between each activity card
+                    
                 }
                 .onDelete(perform: deleteActivity)
             }
+            .listRowSpacing(10.0)
+            
+            //Navigation bar
             .navigationBarTitle("Activities")
             .navigationBarItems(trailing: Button(action: {
                 isAddActivityPresented = true
