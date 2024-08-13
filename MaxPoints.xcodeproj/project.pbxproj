@@ -13,8 +13,6 @@
 		ADC075FB2C51751400D8E62F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC075FA2C51751400D8E62F /* Preview Assets.xcassets */; };
 		ADC075FD2C51751400D8E62F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC075FC2C51751400D8E62F /* Persistence.swift */; };
 		ADC076002C51751400D8E62F /* MaxPoints.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADC075FE2C51751400D8E62F /* MaxPoints.xcdatamodeld */; };
-		ADC076072C5186B100D8E62F /* TaskTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC076062C5186B100D8E62F /* TaskTrackerView.swift */; };
-		ADC076092C5188AF00D8E62F /* DataHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC076082C5188AF00D8E62F /* DataHandling.swift */; };
 		ADC0760D2C564D3D00D8E62F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0760C2C564D3D00D8E62F /* Activity.swift */; };
 		ADC0760F2C56506B00D8E62F /* AddActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC0760E2C56506B00D8E62F /* AddActivityView.swift */; };
 		ADC076142C56558800D8E62F /* SFSymbolPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC076132C56558800D8E62F /* SFSymbolPicker.swift */; };
@@ -31,8 +29,6 @@
 		ADC075FA2C51751400D8E62F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADC075FC2C51751400D8E62F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		ADC075FF2C51751400D8E62F /* MaxPoints.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MaxPoints.xcdatamodel; sourceTree = "<group>"; };
-		ADC076062C5186B100D8E62F /* TaskTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTrackerView.swift; sourceTree = "<group>"; };
-		ADC076082C5188AF00D8E62F /* DataHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandling.swift; sourceTree = "<group>"; };
 		ADC0760C2C564D3D00D8E62F /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		ADC0760E2C56506B00D8E62F /* AddActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityView.swift; sourceTree = "<group>"; };
 		ADC076132C56558800D8E62F /* SFSymbolPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolPicker.swift; sourceTree = "<group>"; };
@@ -74,7 +70,6 @@
 				ADC076102C56507A00D8E62F /* Views */,
 				ADC075F32C51751300D8E62F /* MaxPointsApp.swift */,
 				ADC076182C59889C00D8E62F /* ActivityStore.swift */,
-				ADC076082C5188AF00D8E62F /* DataHandling.swift */,
 				ADC0760C2C564D3D00D8E62F /* Activity.swift */,
 				ADC075F72C51751400D8E62F /* Assets.xcassets */,
 				ADC075FC2C51751400D8E62F /* Persistence.swift */,
@@ -96,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				ADC0760E2C56506B00D8E62F /* AddActivityView.swift */,
-				ADC076062C5186B100D8E62F /* TaskTrackerView.swift */,
 				ADC075F52C51751300D8E62F /* ContentView.swift */,
 				ADC076132C56558800D8E62F /* SFSymbolPicker.swift */,
 				ADC076152C57D11300D8E62F /* SimpleLineGraphView.swift */,
@@ -175,12 +169,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADC076092C5188AF00D8E62F /* DataHandling.swift in Sources */,
 				ADC0760F2C56506B00D8E62F /* AddActivityView.swift in Sources */,
 				ADC076142C56558800D8E62F /* SFSymbolPicker.swift in Sources */,
 				ADC075FD2C51751400D8E62F /* Persistence.swift in Sources */,
 				ADC0760D2C564D3D00D8E62F /* Activity.swift in Sources */,
-				ADC076072C5186B100D8E62F /* TaskTrackerView.swift in Sources */,
 				ADC076162C57D11300D8E62F /* SimpleLineGraphView.swift in Sources */,
 				ADC076192C59889C00D8E62F /* ActivityStore.swift in Sources */,
 				ADC076002C51751400D8E62F /* MaxPoints.xcdatamodeld in Sources */,

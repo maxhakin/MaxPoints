@@ -24,7 +24,7 @@ struct SimpleLineGraphView: View {
         }
         .chartXAxis(.hidden)  // Hide X axis
         .chartYAxis(.hidden)  // Hide Y axis
-        .frame(height: 100)
+        .frame(height: 50)
     }
 
     // Compute the count of increments for each of the last 7 days

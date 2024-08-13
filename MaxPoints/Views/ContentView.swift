@@ -11,47 +11,48 @@ struct ContentView: View {
     @State private var isAddActivityPresented: Bool = false
 
     var body: some View {
-        
         NavigationView {
             List {
                 ForEach($activityStore.activities) { $activity in
-                    VStack(alignment: .leading) {
-                        HStack {
-                            // Activity symbol and name
-                            Image(systemName: activity.symbolName)
-                                .resizable()
-                                .frame(width: 50, height: 50)
-                            
-                            Text(activity.name)
-                                .font(.headline)
-                            
-                            Spacer()
-                            
-                            // Increment button
-                            Button(action: {
-                                activity.incrementDates.append(Date())
-                                Task {
-                                    try? await activityStore.save(activities: activityStore.activities)
-                                }
-                            }) {
-                                Image(systemName: "plus.circle")
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
-                            }
-                            .buttonStyle(PlainButtonStyle())
-                        }
+                    HStack() {
+                        
+                        //Activity name
+                        Text(activity.name)
+                            .font(.headline)
+                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            .frame(width: 50)
                         
                         // Simple line graph showing increments over the last 7 days
                         SimpleLineGraphView(dataPoints: activity.incrementDates)
                             .padding(.top, 5)
-                        
+                                
+                        Spacer()
+                                
                         // Today's increment count
                         let todayIncrementCount = activity.incrementDates.filter { isSameDay(date1: $0, date2: Date()) }.count
-                        Text("Today's Increments: \(todayIncrementCount)")
+                        Text("\(todayIncrementCount)")
                             .font(.subheadline)
-                            .padding(.top, 5)
+                            .padding(5)
+                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            
+ 
+                            
+                            
+                            
+                        
+                        // Increment button
+                        Button(action: {
+                            activity.incrementDates.append(Date())
+                            Task {
+                                try? await activityStore.save(activities: activityStore.activities)
+                            }
+                        }) {
+                            Image(systemName: "plus.circle")
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                        }
+                        .buttonStyle(PlainButtonStyle())
                     }
-                    .padding()  // Padding inside each activity card
                     .background(
                         RepeatingPatternView(symbolName: activity.symbolName, size: 30, spacing: 15)
                             .foregroundColor(.gray.opacity(0.2)) // Adjust the color and opacity as needed
